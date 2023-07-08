@@ -1,0 +1,30 @@
+body { 
+	font-family: monospace; 
+	background: #f8f4fc;
+}
+.contenedor {
+	margin: auto;
+	display: table;
+}
+
+h1 { 
+	position: relative; 
+	float: left;
+	background: #f8f4fc;
+	color: #fff;
+	font-size: 2.3em;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: #f8f4fc;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
